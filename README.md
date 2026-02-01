@@ -29,13 +29,10 @@ Download it here: [Google Drive Link](https://drive.google.com/file/d/1V-tf7eWrD
 3. Run the Python scripts using:  
 ```bash
 python main_analysis.py
+```
 
 ## Outputs
 
-Below are the outputs generated from the project:
+All output images generated from this project are available in the **outputs** folder of this repository.
 
-![Output 1](outputs/output1.png)
-![Output 2](outputs/output2.png)
-![Output 3](outputs/output3.png)
-![Output 4](outputs/output4.png)
-![Output 5](outputs/output5.png)
+
