@@ -4,22 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airline Data Analysis | Undi Surya Pavani</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Poppins', sans-serif; background: #0f172a; color: #f8fafc; text-align: center; padding: 50px; }
-        h1 { color: #3b82f6; }
-        a { color: #60a5fa; text-decoration: none; font-weight: bold; }
-        a:hover { color: #3b82f6; }
-        p { margin-top: 20px; font-size: 16px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background: #0f172a; 
+            color: #f8fafc; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            min-height: 100vh; 
+            padding: 30px 20px; 
+            text-align: center;
+        }
+        h1 { 
+            color: #3b82f6; 
+            font-size: clamp(28px, 5vw, 48px); 
+            margin-bottom: 20px; 
+        }
+        h2 { 
+            color: #f8fafc; 
+            font-weight: 400; 
+            margin-bottom: 25px; 
+        }
+        a { 
+            display: inline-block;
+            margin: 10px 0; 
+            padding: 12px 25px; 
+            border-radius: 8px; 
+            background: #3b82f6; 
+            color: white; 
+            text-decoration: none; 
+            font-weight: 600; 
+            transition: 0.3s; 
+        }
+        a:hover { 
+            background: #60a5fa; 
+            color: #0f172a; 
+        }
+        .links { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 15px; 
+            margin-top: 20px; 
+        }
+        .description { 
+            font-size: 16px; 
+            color: #94a3b8; 
+            max-width: 600px; 
+            margin: 15px auto 30px auto; 
+            line-height: 1.5; 
+        }
     </style>
 </head>
 <body>
     <h1>Airline Data Analysis</h1>
-    <p>Portfolio project by <strong>Undi Surya Pavani</strong></p>
-    <p>
-        📂 <a href="https://github.com/Pavani200618/Airlines-Analysis" target="_blank">View Project on GitHub</a>
+    <h2>By Undi Surya Pavani</h2>
+    <p class="description">
+        Analyzed airline delay patterns and route popularity using Python scripts. 
+        This project includes data cleaning, processing, and visualizations with Python.
     </p>
-    <p>
-        📝 <a href="Airlines-Analysis.ipynb" target="_blank">View Notebook</a>
-    </p>
+    <div class="links">
+        <a href="https://github.com/Pavani200618/Airlines-Analysis" target="_blank">📂 View Repository on GitHub</a>
+        <a href="https://github.com/Pavani200618/Airlines-Analysis" target="_blank">🐍 Open Python Scripts</a>
+    </div>
 </body>
 </html>
+
