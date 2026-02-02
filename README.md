@@ -23,11 +23,12 @@ Identify delay and cancellation patterns
 Provide interactive and user-friendly visual insights
 
 🛠️ Tech Stack
-Python
-Streamlit
-Pandas
-Plotly
-GitHub
+
+Python,
+Streamlit,
+Pandas,
+Plotly,
+GitHub and
 Dropbox (dataset hosting)
 
 🗂 Dataset
