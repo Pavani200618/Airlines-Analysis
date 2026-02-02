@@ -1,6 +1,6 @@
 # ✈️ Airlines Performance Analysis Dashboard
 
-**🚀 LIVE APP:** [View Interactive Dashboard](https://pavani-flight-dashboard.streamlit.app/)  
+**🚀 LIVE APP:** [View Interactive Dashboard](https://pavani200618-airlines-analysis-app-pjimon.streamlit.app/)  
 *(Hosted via Streamlit Cloud for real-time data processing)*
 
 ---
