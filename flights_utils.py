@@ -3,24 +3,24 @@ import streamlit as st
 
 @st.cache_data
 def load_data():
-    # PASTE YOUR DROPBOX LINK HERE
-    dropbox_link = "PASTE_YOUR_DROPBOX_LINK_HERE"
+    # REPLACE THE LINK BELOW WITH YOUR ACTUAL DROPBOX SHARE LINK
+    dropbox_link = "YOUR_DROPBOX_LINK_HERE"
     
-    # This line converts the link to a direct download link
+    # Converts the link for direct download
     data_url = dropbox_link.replace("dl=0", "dl=1")
     
-    # Load data
     try:
+        # Loading 70,000 rows as requested
         df = pd.read_csv(data_url, nrows=70000)
     except Exception as e:
         st.error(f"Failed to download data: {e}")
         st.stop()
 
-    # Clean column names
+    # Standardize column names (fixes the KeyError)
     df.columns = [str(c).strip().upper() for c in df.columns]
 
     if "DEP_DELAY" not in df.columns:
-        st.error(f"Column 'DEP_DELAY' not found. Columns: {df.columns.tolist()}")
+        st.error(f"Column 'DEP_DELAY' not found. Available: {df.columns.tolist()}")
         st.stop()
 
     df = df.dropna(subset=["DEP_DELAY"])
