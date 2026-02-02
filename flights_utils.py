@@ -3,7 +3,7 @@ import streamlit as st
 
 @st.cache_data
 def load_data():
-    # Your Dropbox link
+    # Your verified Dropbox link
     dropbox_link = "https://www.dropbox.com/scl/fi/xkdcenlz9qdwdzmfy1gik/flights.csv.csv?rlkey=s0hsv38sh9m1vzggq1h412b83&st=c9w05fs2&dl=0"
     
     # Converts the link to a direct download link
@@ -16,14 +16,14 @@ def load_data():
         st.error(f"Failed to download data: {e}")
         st.stop()
 
-    # Clean column names (Fixes the DEP_DELAY error)
+    # Standardize column names
     df.columns = [str(c).strip().upper() for c in df.columns]
 
     if "DEP_DELAY" not in df.columns:
         st.error(f"Column 'DEP_DELAY' not found. Available: {df.columns.tolist()}")
         st.stop()
 
-    # Data Processing
+    # Data Processing for risk factors
     df = df.dropna(subset=["DEP_DELAY"])
     df["IS_HIGH_RISK"] = df["DEP_DELAY"] > 15
     df["RISK_SCORE"] = df["IS_HIGH_RISK"].astype(int) * 100
