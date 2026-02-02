@@ -5,12 +5,14 @@ The Airlines Performance Analysis Dashboard is a Python-based data analytics app
 It provides interactive visual insights into flight delays, cancellations, and operational trends through a web-based dashboard built with Streamlit.
 
 Due to the large dataset size (586 MB), the project follows a cloud-based deployment approach for efficient data handling and real-time visualization.
+
 📊 Live Application (Project Output)
 
 🔗 Interactive Dashboard:
 https://pavani200618-airlines-analysis-app-pjimon.streamlit.app/
 
 Output Description:
+
 This project’s final output is a fully interactive web dashboard deployed on Streamlit Cloud, enabling real-time data processing and dynamic visualization of airline performance metrics.
 
 🎯 Key Objectives
