@@ -1,26 +1,16 @@
-# ✈️ Airlines Performance & Delinquency Risk Analysis
+# ✈️ Airlines Performance Analysis Dashboard
 
 ## Overview
-This project is an interactive dashboard analyzing airline flight data (70,000+ records) to identify delay patterns and risk factors. Unlike static analysis, this project uses a live Python backend to calculate performance metrics in real-time.
+This project is an interactive dashboard analyzing airline flight data (70,000+ records) to identify delay patterns, peak travel times, and route efficiency.
 
 **🚀 [Click Here to View the Live Interactive App](https://airlines-analysis-pavani.streamlit.app/)**
 
-## Key Risk Factors Analyzed
-Based on industry standards for customer delinquency, this tool evaluates:
-* **Payment History** and **Credit Utilization Rate**
-* **Debt-to-Income (DTI) Ratio**
-* **Employment and Income Stability**
-* **Recent Credit Activity** and **Demographic Trends**
+## Key Features
+* **Route Finder:** Analyze specific flight paths between cities.
+* **Delay Analysis:** Breakdown of delays by airline and month.
+* **Global Statistics:** High-level overview of flight performance across the dataset.
 
 ## Project Architecture
-* **Frontend:** Streamlit (hosted on Streamlit Cloud)
-* **Data Hosting:** Dropbox (handles the 586MB dataset bypass)
-* **Analysis Engine:** Python (Pandas, Plotly)
-
-## Files
-* `app.py` — Main application entry point and navigation.
-* `flights_utils.py` — Data pipeline connecting to Dropbox and cleaning the CSV.
-* `Route_Finder.py` / `Global_Analysis.py` — Page-specific analysis logic.
-
-## Dataset
-The dataset (586MB) is streamed directly from Dropbox to the app, so no local download is required to view the results.
+* **Frontend:** Streamlit (Python)
+* **Data Hosting:** Dropbox (Large 586MB Dataset)
+* **Visualizations:** Plotly & Pandas
