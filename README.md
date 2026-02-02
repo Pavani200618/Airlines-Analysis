@@ -38,8 +38,7 @@ Format: CSV
 🔗 Dataset Download:
 https://www.dropbox.com/scl/fi/xkdcenlz9qdwdzmfy1gik/flights.csv.csv?rlkey=s0hsv38sh9m1vzggq1h412b83&st=c9w05fs2&dl=1
 
-🧭 How to Run This Project Locally
-If you want to try this project on your local machine, follow these steps:
+🧭 If you want to try this project on your local machine, follow these steps:
 
 1️⃣ Clone the Repository
 
