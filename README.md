@@ -1,38 +1,26 @@
-# Airlines Analysis Project
+# ✈️ Airlines Performance & Delinquency Risk Analysis
 
 ## Overview
-This project analyzes airline flight data to extract insights on delays, routes, and performance trends. The analysis is performed using Python, including data cleaning, analysis, and visualization.
+This project is an interactive dashboard analyzing airline flight data (70,000+ records) to identify delay patterns and risk factors. Unlike static analysis, this project uses a live Python backend to calculate performance metrics in real-time.
 
-The goal of this project is to:  
-- Understand flight delay patterns by airline  
-- Identify most frequent routes  
-- Analyze monthly and seasonal trends  
-- Provide visual insights for better decision-making
+**🚀 [Click Here to View the Live Interactive App](https://airlines-analysis-pavani.streamlit.app/)**
+
+## Key Risk Factors Analyzed
+Based on industry standards for customer delinquency, this tool evaluates:
+* **Payment History** and **Credit Utilization Rate**
+* **Debt-to-Income (DTI) Ratio**
+* **Employment and Income Stability**
+* **Recent Credit Activity** and **Demographic Trends**
+
+## Project Architecture
+* **Frontend:** Streamlit (hosted on Streamlit Cloud)
+* **Data Hosting:** Dropbox (handles the 586MB dataset bypass)
+* **Analysis Engine:** Python (Pandas, Plotly)
 
 ## Files
-- `main_analysis.py` — main Python script with analysis code  
-- `data_cleaning.py` — script for cleaning and preprocessing the data (if applicable)  
-- `visualizations.py` — script to generate graphs and charts (if applicable)  
-- Any other Python scripts used in the project  
-
-> Replace these names with your actual Python file names.
+* `app.py` — Main application entry point and navigation.
+* `flights_utils.py` — Data pipeline connecting to Dropbox and cleaning the CSV.
+* `Route_Finder.py` / `Global_Analysis.py` — Page-specific analysis logic.
 
 ## Dataset
-The dataset used is **large and not included in this repo**.  
-Download it here: [Google Drive Link](https://drive.google.com/file/d/19h0lEG2PouEG7sSM7MR6ARHncmYaIT6x/view?usp=sharing)  
-
-> Place the CSV file in the same folder as the Python scripts to run the analysis.
-
-## How to Run
-1. Download the dataset from the link above.  
-2. Place the CSV file in the project folder.  
-3. Run the Python scripts using:  
-```bash
-python main_analysis.py
-```
-
-## Outputs
-
-All output images generated from this project are available in the **outputs** folder of this repository.
-
-
+The dataset (586MB) is streamed directly from Dropbox to the app, so no local download is required to view the results.
