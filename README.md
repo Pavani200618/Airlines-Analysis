@@ -49,6 +49,7 @@ git clone https://github.com/Pavani200618/Airlines-Analysis.git
 pip install streamlit pandas plotly
 
 3️⃣ Run the Application
+
 Place the downloaded dataset(link given above) in the project folder 
 
 Execute:
