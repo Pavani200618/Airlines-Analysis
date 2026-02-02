@@ -40,10 +40,15 @@ https://www.dropbox.com/scl/fi/xkdcenlz9qdwdzmfy1gik/flights.csv.csv?rlkey=s0hsv
 If you want to try this project on your local machine, follow these steps:
 
 1️⃣ Clone the Repository
+
 git clone https://github.com/Pavani200618/Airlines-Analysis.git
+
 2️⃣ Install Dependencies
+
 pip install streamlit pandas plotly
+
 3️⃣ Run the Application
 Place the downloaded dataset(link given above) in the project folder
 Execute:
+
 streamlit run app.py
